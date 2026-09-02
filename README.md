@@ -16,11 +16,11 @@ Implementation of techniques used to prepare and transform raw data for Machine 
 * Feature selection
 * Creating meaningful features
 
-### 2. Finding Missing Values
+ 2. Finding Missing Values
 
 Techniques for identifying and analyzing missing data in datasets.
 
-**Includes:**
+Includes:
 
 * Detecting missing values using Pandas
 * Counting missing values
