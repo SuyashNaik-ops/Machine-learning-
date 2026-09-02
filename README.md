@@ -2,9 +2,9 @@
 
 This repository contains my **Machine Learning implementations and practical experiments** using Python. It covers important concepts from data preprocessing and feature engineering to dimensionality reduction and regression.
 
-## 📌 Topics Covered
+📌 Topics Covered
 
-### 1. Feature Engineering
+ 1. Feature Engineering
 
 Implementation of techniques used to prepare and transform raw data for Machine Learning models.
 
