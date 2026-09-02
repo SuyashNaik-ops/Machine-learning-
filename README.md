@@ -65,7 +65,7 @@ Polynomial Regression is used to model **non-linear relationships** between inde
 * Underfitting and overfitting
 * Bias–Variance Trade-off
 
-## 🛠️ Technologies Used
+ 🛠️ Technologies Used
 
 * 🐍 Python
 * 🐼 Pandas
