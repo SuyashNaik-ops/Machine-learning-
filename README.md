@@ -40,7 +40,7 @@ Covered concepts:
 * Dimensionality reduction
 * PCA visualization
 
-### 4. LDA — Linear Discriminant Analysis
+ 4. LDA — Linear Discriminant Analysis
 
 LDA is a supervised dimensionality reduction technique that finds feature combinations that best separate different classes.
 
