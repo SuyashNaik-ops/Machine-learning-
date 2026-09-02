@@ -8,7 +8,7 @@ This repository contains my **Machine Learning implementations and practical exp
 
 Implementation of techniques used to prepare and transform raw data for Machine Learning models.
 
-**Includes:**
+Includes:
 
 * Handling categorical variables
 * Feature transformation
