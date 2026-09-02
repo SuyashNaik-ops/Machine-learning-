@@ -27,7 +27,7 @@ Includes:
 * Finding columns containing missing data
 * Understanding the impact of missing values
 
-### 3. PCA — Principal Component Analysis
+ 3. PCA — Principal Component Analysis
 
 PCA is a dimensionality reduction technique used to reduce the number of features while retaining important information from the dataset.
 
