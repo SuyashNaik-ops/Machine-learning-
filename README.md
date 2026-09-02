@@ -31,7 +31,7 @@ Includes:
 
 PCA is a dimensionality reduction technique used to reduce the number of features while retaining important information from the dataset.
 
-**Covered concepts:**
+Covered concepts:**
 
 * Standardization
 * Covariance
