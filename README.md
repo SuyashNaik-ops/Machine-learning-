@@ -75,7 +75,7 @@ Polynomial Regression is used to model **non-linear relationships** between inde
 * 🤖 Scikit-learn
 * 💻 Jupyter Notebook
 
-## 📂 Repository Structure
+ 📂 Repository Structure
 
 ```text
 ML-Codes/
