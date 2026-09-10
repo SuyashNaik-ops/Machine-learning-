@@ -98,7 +98,7 @@ ML-Codes/
 └── README.md
 ```
 
-## 🎯 Learning Objectives
+ 🎯 Learning Objectives
 
 Through these implementations, I am developing practical understanding of:
 
