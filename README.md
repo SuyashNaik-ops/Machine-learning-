@@ -51,7 +51,7 @@ Covered concepts:
 * Dimensionality reduction
 * Visualization of reduced data
 
-### 5. Polynomial Regression
+ 5. Polynomial Regression
 
 Polynomial Regression is used to model **non-linear relationships** between independent and dependent variables.
 
