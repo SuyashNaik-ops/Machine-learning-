@@ -44,7 +44,7 @@ Covered concepts:
 
 LDA is a supervised dimensionality reduction technique that finds feature combinations that best separate different classes.
 
-**Covered concepts:
+Covered concepts:
 
 * Class separation
 * Linear discriminants
