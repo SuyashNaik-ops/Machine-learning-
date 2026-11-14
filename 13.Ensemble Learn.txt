@@ -1,0 +1,40 @@
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.metrics import accuracy_score
+
+# Load dataset
+data = load_breast_cancer()
+X, y = data.data, data.target
+
+# Split dataset
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+
+# Scale data for baseline model
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+# Baseline model
+lr = LogisticRegression(max_iter=1000)
+lr.fit(X_train_scaled, y_train)
+pred1 = lr.predict(X_test_scaled)
+
+# Random Forest
+rf = RandomForestClassifier(n_estimators=100, random_state=42)
+rf.fit(X_train, y_train)
+pred2 = rf.predict(X_test)
+
+# Gradient Boosting
+gb = GradientBoostingClassifier(random_state=42)
+gb.fit(X_train, y_train)
+pred3 = gb.predict(X_test)
+
+# Compare accuracy
+print("Logistic Regression Accuracy:", accuracy_score(y_test, pred1)*100)
+print("Random Forest Accuracy:", accuracy_score(y_test, pred2)*100)
+print("Gradient Boosting Accuracy:", accuracy_score(y_test, pred3)*100)

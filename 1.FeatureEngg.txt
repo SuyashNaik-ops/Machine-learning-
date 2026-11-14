@@ -1,0 +1,67 @@
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+
+# Load the dataset
+df = pd.read_csv("Titanic-Dataset.csv")
+
+print("Original Dataset")
+print(df.head())
+
+# Display dataset information
+print("\nDataset Information")
+df.info()
+
+# Check missing values
+print("\nMissing Values")
+print(df.isnull().sum())
+
+# Display categorical and numerical columns
+print("\nCategorical Columns")
+print(df.select_dtypes(include=['str']).columns)
+
+print("\nNumerical Columns")
+print(df.select_dtypes(include=['int64', 'float64']).columns)
+
+
+# 1. Handle Missing Values
+print("\nHandling Missing Values")
+
+df['Age'] = df['Age'].fillna(df['Age'].mean())
+df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
+
+df.drop('Cabin', axis=1, inplace=True)
+
+print("Missing values handled successfully.")
+
+print(df.isnull().sum())
+
+
+# 2. Encode Categorical Columns
+print("\nEncoding Categorical Columns")
+
+df['Sex'] = df['Sex'].map({'male': 1, 'female': 0})
+df['Embarked'] = df['Embarked'].map({'C': 0, 'Q': 1, 'S': 2})
+
+print("Categorical columns encoded successfully.")
+
+
+# 3. Scale Numerical Features
+print("\nScaling Numerical Features")
+
+scaler = StandardScaler()
+
+df[['Age', 'Fare', 'SibSp', 'Parch']] = scaler.fit_transform(
+    df[['Age', 'Fare', 'SibSp', 'Parch']]
+)
+
+print("Numerical features scaled successfully.")
+
+
+# Display Final Dataset
+print("\nFinal Cleaned Dataset")
+print(df.head())
+
+# Save the cleaned dataset
+df.to_csv("Titanic_Cleaned.csv", index=False)
+
+print("\nCleaned dataset saved successfully!")
