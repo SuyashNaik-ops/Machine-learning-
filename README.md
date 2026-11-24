@@ -4,7 +4,7 @@ This repository contains my **Machine Learning implementations and practical exp
 
 📌 Topics Covered
 
- 1. Feature Engineering
+ 1. Feature Engineering:
 
 Implementation of techniques used to prepare and transform raw data for Machine Learning models.
 
