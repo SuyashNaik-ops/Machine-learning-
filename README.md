@@ -13,7 +13,7 @@ Includes:
  Handling categorical variables
  Feature transformation
  Feature scaling
-* Feature selection
+ Feature selection
 * Creating meaningful features
 
  2. Finding Missing Values
