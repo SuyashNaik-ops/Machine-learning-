@@ -12,7 +12,7 @@ Includes:
 
  Handling categorical variables
  Feature transformation
-* Feature scaling
+ Feature scaling
 * Feature selection
 * Creating meaningful features
 
