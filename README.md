@@ -11,7 +11,7 @@ Implementation of techniques used to prepare and transform raw data for Machine 
 Includes:
 
  Handling categorical variables
-* Feature transformation
+ Feature transformation
 * Feature scaling
 * Feature selection
 * Creating meaningful features
